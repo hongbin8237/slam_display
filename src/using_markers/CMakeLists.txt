@@ -175,15 +175,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(basic_shapes src/basic_shapes.cpp)
-target_link_libraries(basic_shapes ${catkin_LIBRARIES})
-
-add_executable(points_and_lines src/points_and_lines.cpp)
-target_link_libraries(points_and_lines ${catkin_LIBRARIES})
-
-add_executable(display src/display.cpp)
-target_link_libraries(display ${catkin_LIBRARIES})
-
 add_executable(display_realtime src/display_realtime.cpp src/slamIO.cpp src/ourerr.cpp)
 #target_link_libraries ( display_realtime ${OpenCV_LIBRARIES} ${catkin_LIBRARIES} ${ARC_LIBRARIES}
 #    )
